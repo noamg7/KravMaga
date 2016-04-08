@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="KravMaga">
 <head>
   <meta charset="UTF-8">
   <title>Krav Maga!!!</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
   <link rel="stylesheet" href="main.css">
 </head>
-<body>
-<h1></h1>
+<body ng-controller="controller" >
+<h1>Krav Maga (קְרַב מַגָּע)</h1>
+<ol>
+  <h3>What is Krav Maga?</h3>
+  <li>It is a self-defense system</li>
+  <li>Developed in Israel</li>
+  <li>It is a combination of:</li>
+    <ul>
+      <li>Aikido</li>
+      <li>Judo</li>
+      <li>Boxing</li>
+      <li>Wrestling</li>
+      <li>Realistic fight training</li>
+    </ul>
+</ol>
+<ol>
+  <h3>What do you need to know if you are considering taking taking Krav Maga classes</h3>
+  <h4>Warning You Will be in Pain</h4>
+  <li>Know How to BREATH!!!</li>
+    <ul>
+      <li>If you can't breath that is BAD!!!</li>
+      <li>Inhale through your nose</li>
+      <li>Exhale through your mouth</li>
+    </ul>
+    <li>Work hard</li>
+    <li>Be patient</li>
+      <ul>
+        <li>Learning technics takes time</li>
+        <li>It is not something you memorise in your head</li>
+        <li>The body has to learn how to react</li>
+      </ul>
+    <li>listen to your instructure</li>
+    <li>Be committed</li>
+    <li>Don't give up</li>
+    <li>Enjoy the experience</li>
+  <h3>Why take Krav Maga?</h3>
+    <ol>
+      <li>You will find out where Datt Damon learned to fight in the Bourne movies</li>
+      <li>Learn self defense</li>
+        <ul>
+          <li>Street fighting</li>
+          <li>Gun defense</li>
+          <li>Knife defense</li>
+        </ul>
+      <li>Build self confidence</li>
+      <li>Get in shape</li>
+      <li>Blow off steam</li>
+      <li>Get a way form your trouble</li>
+    </ol>
+</ol>
+<ul>
+  <li class="row" ng-repeat="maga in kravs">
+    <div class="col-md-5">
+      <object width="450" height="250" data="https://www.youtube.com/embed/{{maga.video}}" frameborder="0" allowfullscreen></object>
+    </div>
+    <div class="col-md-3" id={{movie.id}}>
+      <ul>
+        <li>Description: {{maga.info.Description}}</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <img ng-src="{{maga.img}}">
+    </div>
+  </li>
+</ul>
+<script src='app.js'></script>
 </body>
 </html>
