@@ -1,4 +1,18 @@
+html{
+  margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(http://static.boxing-shop.com/commercio/images/boutique/zoom/zoom_1284639602.jpg);
+  background-size: cover;
+  background-repeat: no-repeat bottom right;
+  color: #009900;
+	margin: 0;
+	padding: 0;
+}
 img{
   height: 250px;
   width: 350px;
+  margin: 0;
+	padding: 0;
 }
