@@ -8,12 +8,16 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body ng-controller="controller" >
-<h1>Krav Maga (קְרַב מַגָּע)</h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+      <h1>Krav Maga (קְרַב מַגָּע)</h1>
+  </div>
+</div>
 <ol>
   <h3>What is Krav Maga?</h3>
   <li>It is a self-defense system</li>
   <li>Developed in Israel</li>
-  <li>It is a combination of:</li>
+  <li>It is a combinations of:</li>
     <ul>
       <li>Aikido</li>
       <li>Judo</li>
@@ -23,42 +27,63 @@
     </ul>
 </ol>
 <ol>
-  <h3>What do you need to know if you are considering taking taking Krav Maga classes</h3>
-  <h4>Warning You Will be in Pain</h4>
-  <li>Know How to BREATH!!!</li>
-    <ul>
-      <li>If you can't breath that is BAD!!!</li>
-      <li>Inhale through your nose</li>
-      <li>Exhale through your mouth</li>
-    </ul>
-    <li>Work hard</li>
-    <li>Be patient</li>
-      <ul>
-        <li>Learning technics takes time</li>
-        <li>It is not something you memorise in your head</li>
-        <li>The body has to learn how to react</li>
-      </ul>
-    <li>listen to your instructure</li>
-    <li>Be committed</li>
-    <li>Don't give up</li>
-    <li>Enjoy the experience</li>
-  <h3>Why take Krav Maga?</h3>
-    <ol>
-      <li>You will find out where Datt Damon learned to fight in the Bourne movies</li>
-      <li>Learn self defense</li>
+  <div class="row">
+    <div class="col-md-5 col-md-offset-3">
+      <center><h3 id="what">What to know before taking taking a Krav Maga class?</h3></center>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-5 col-md-offset-3">
+    <center><h2>!!!Warning You Will be in Pain!!!</h2></center>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-3">
+      <li>Learn How to BREATH!!!</li>
         <ul>
-          <li>Street fighting</li>
-          <li>Gun defense</li>
-          <li>Knife defense</li>
+          <li>If you can't breath that is BAD!!!</li>
+          <li>Inhale through your nose</li>
+          <li>Exhale through your mouth</li>
         </ul>
-      <li>Build self confidence</li>
-      <li>Get in shape</li>
-      <li>Blow off steam</li>
-      <li>Get a way form your trouble</li>
-    </ol>
+        <li>Work hard</li>
+        <li>Be patient</li>
+          <ul>
+            <li>Learning technics takes time</li>
+            <li>It is not something you memorise in your head</li>
+            <li>The body has to learn how to react</li>
+          </ul>
+        <li>listen to your instructure</li>
+        <li>Be committed</li>
+        <li>Don't give up</li>
+        <li>Enjoy the experience</li>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-5 col-md-offset-7">
+      <h3 id="why">Why take Krav Maga?</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-5 col-md-offset-7">
+      <ol>
+        <li>Note Krav Maga is not for staring a fight it is for self-defense ONLY!!!</li>
+        <li>You will find out where Datt Damon learned to fight in the Bourne movies</li>
+        <li>Learn self defense</li>
+          <ul>
+            <li>Street fighting</li>
+            <li>Gun defense</li>
+            <li>Knife defense</li>
+          </ul>
+        <li>Build self confidence</li>
+        <li>Get in shape</li>
+        <li>Blow off steam</li>
+        <li>Get a way form your trouble</li>
+      </ol>
+    </div>
+  </div>
 </ol>
-<ul>
-  <li class="row" ng-repeat="maga in kravs" style='background-image:url({{maga.background}})'>
+<ul id="example">
+  <li class="row" ng-repeat="maga in kravs" style='background-image:url({{maga.background}}); width:100%'>
     <div class="col-md-5">
       <object width="450" height="250" data="https://www.youtube.com/embed/{{maga.video}}" frameborder="0" allowfullscreen></object>
     </div>
